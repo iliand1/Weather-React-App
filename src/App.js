@@ -1,4 +1,3 @@
-import { result } from "lodash";
 import { useState } from "react";
 const api = {
   key: "963b7dd346a4e3a42660cab9247fe92b",
