@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .app {
   background-image: url("./assets/winter-forest.jpg");
@@ -16,17 +16,23 @@ body {
 .app.warm {
   background-image: url("./assets/warm-bg.jpg");
 }
+.app.cold {
+  background-image: url("./assets/cold-bg.jpg");
+}
 main {
   height: 100vh;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.3)
+  );
   padding: 25px;
 }
-.search-box{
+.search-box {
   width: 75%;
   margin: 0 auto;
-
 }
-.search-box .search-bar{
+.search-box .search-bar {
   display: block;
   width: 100%;
   padding: 15px;
@@ -35,33 +41,35 @@ main {
   border: none;
   outline: none;
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius:15px;
+  border-radius: 15px;
   color: #313131;
   font-size: 20px;
   transition: 0.4s ease;
 }
-.search-box .search-bar:focus{
+.search-box .search-bar:focus {
   background-color: rgba(255, 255, 255, 0.9);
 }
-.weather-box,.location-box{
+.weather-box,
+.location-box {
+  text-transform: capitalize;
   color: #fff;
 }
-.location{
+.location {
   margin-top: 90px;
-  font-size:40px;
+  font-size: 40px;
   font-weight: 500;
   text-align: center;
 }
-.date{
+.date {
   font-size: 20px;
   font-weight: 300px;
   font-style: italic;
   text-align: center;
 }
-.weather-box{
+.weather-box {
   text-align: center;
 }
-.weather-box .temp{
+.weather-box .temp {
   position: relative;
   display: inline-block;
   margin: 30px auto;
@@ -71,7 +79,10 @@ main {
   border-radius: 15px;
   box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
 }
-.weather-box .weather{
+.temp{
+  padding-inline: 20px;
+}
+.weather-box .weather {
   font-size: 40px;
   font-weight: 700;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
