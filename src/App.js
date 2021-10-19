@@ -15,18 +15,15 @@ function App() {
           setWeather(result);
           setQuery("");
           console.log(result);
-          if (result.weather[0].main === "Rain"){
+          if (result.weather[0].main === "Rain") {
             setBg("rain");
-          }
-          else if(result.weather[0].main === "Clouds"){
+          } else if (result.weather[0].main === "Clouds") {
             setBg("clouds");
-          }
-          else if(result.weather[0].main === "Clear"){
+          } else if (result.weather[0].main === "Clear") {
             setBg("clear");
           }
-        })
-    
-      }
+        });
+    }
   };
 
   const dateBuilder = (d) => {
@@ -60,12 +57,12 @@ function App() {
     let year = d.getFullYear();
     return `${day}, ${date} ${month} ${year}`;
   };
-  
+
   //  if (weather.weather[0].main.toLower==="rain"){
   //    test = "warm"
   // }
-  let [bg,setBg] = useState("")
-  
+  let [bg, setBg] = useState("");
+
   return (
     <div className={`app ${bg}`}>
       <main>
@@ -113,7 +110,7 @@ function App() {
 //   };
 //   return <div>
 //     <i className={`${icons[extension]}`}></i>
-    
+
 //     {name}</div>;
 // }
 export default App;
