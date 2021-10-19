@@ -8,16 +8,19 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .app {
-  background-image: url("./assets/winter-forest.jpg");
+  background-image: url("./assets/base.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.5s ease-in-out;
 }
-.app.warm {
-  background-image: url("./assets/warm-bg.jpg");
+.app.clear{
+  background-image: url("./assets/clear-sky.jpg");
 }
-.app.cold {
-  background-image: url("./assets/cold-bg.jpg");
+.app.clouds {
+  background-image: url("./assets/cloudy.jpg");
+}
+.app.rain {
+  background-image: url("./assets/rain.jpg");
 }
 main {
   height: 100vh;

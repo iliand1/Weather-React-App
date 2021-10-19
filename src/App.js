@@ -15,10 +15,17 @@ function App() {
           setWeather(result);
           setQuery("");
           console.log(result);
-        });
-    if (weather.weather[0].main === "Clear"){
-      setBg("cold");
-    }
+          if (result.weather[0].main === "Rain"){
+            setBg("rain");
+          }
+          else if(result.weather[0].main === "Clouds"){
+            setBg("clouds");
+          }
+          else if(result.weather[0].main === "Clear"){
+            setBg("clear");
+          }
+        })
+    
       }
   };
 
