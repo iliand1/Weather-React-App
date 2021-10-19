@@ -14,10 +14,10 @@ body {
   transition: 0.5s ease-in-out;
 }
 .app.clear {
-  background-image: url("./assets/clear-sky.jpg");
+  background-image: url("./assets/clear.jpg");
 }
 .app.clouds {
-  background-image: url("./assets/cloudy.jpg");
+  background-image: url("./assets/clouds.jpg");
 }
 .app.rain {
   background-image: url("./assets/rain.jpg");
