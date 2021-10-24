@@ -21,8 +21,7 @@ function App() {
             setBg("clouds");
           } else if (result.weather[0].main === "Clear") {
             setBg("clear");
-          }
-          else if (result.weather[0].main === "Snow") {
+          } else if (result.weather[0].main === "Snow") {
             setBg("snow");
           }
         });
