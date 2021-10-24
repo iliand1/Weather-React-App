@@ -22,6 +22,9 @@ function App() {
           } else if (result.weather[0].main === "Clear") {
             setBg("clear");
           }
+          else if (result.weather[0].main === "Snow") {
+            setBg("snow");
+          }
         });
     }
   };
@@ -58,9 +61,6 @@ function App() {
     return `${day}, ${date} ${month} ${year}`;
   };
 
-  //  if (weather.weather[0].main.toLower==="rain"){
-  //    test = "warm"
-  // }
   let [bg, setBg] = useState("");
 
   return (
@@ -96,21 +96,4 @@ function App() {
     </div>
   );
 }
-
-// function File(props) {
-//   const { name } = props;
-
-//   const extension = name.split(".")[1];
-//   const icons = {
-//     jpeg: "file image icon",
-//     png: "file image icon",
-//     flac: "music icon",
-//     mp3:"file audio outline icon",
-//     exe:"save icon"
-//   };
-//   return <div>
-//     <i className={`${icons[extension]}`}></i>
-
-//     {name}</div>;
-// }
 export default App;
