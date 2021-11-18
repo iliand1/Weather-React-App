@@ -12,6 +12,7 @@ body {
   background-size: cover;
   background-position: bottom;
   transition: 0.5s ease-in-out;
+  overflow:hidden;
 }
 .app.clear {
   background-image: url("./assets/clear.jpg");
